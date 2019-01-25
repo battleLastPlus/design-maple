@@ -1,0 +1,87 @@
+.icon {
+	width: 1em; height: 1em;
+	vertical-align: -0.15em;
+	fill: #fff;
+	overflow: hidden;
+	pointer-events:none;
+}
+.app-header{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	min-width: 1200px;
+	height: 60px;
+    background: #161616FF;
+	border-bottom: 1px solid #212121;
+    box-shadow: 0 0px 5px #212121;		
+}
+.logo{
+	float: left;
+	width: 125px;
+	height: 100%;
+	line-height: 60px;
+	cursor:pointer;
+}
+.logoimg{
+	margin: -12px 0 0 -10px;
+	width: 30px;
+	vertical-align: middle;
+}
+.logotext{
+	margin-left: 15px;
+	width: 80px;
+	vertical-align: middle;
+}
+.left-header{
+	float: left;
+	width: 420px;
+	height: 100%;
+	margin-left: 10px;
+	line-height: 60px;
+}
+.left-header div{
+	float: left;
+	cursor: pointer;
+	padding: 0 14px;
+}
+.left-header .butText{
+	color: #fff;
+	font-size: 14px;
+	pointer-events:none;
+}
+.content-header{
+	float: left;
+	width: 0px;
+	height: 100%;
+	line-height: 60px;
+    margin-left: 170px;
+}
+.right-header{
+	float: right;
+	width: 638px;
+	height: 100%;
+	line-height: 60px;
+}
+.right-header div{
+	float: left;
+	cursor: pointer;
+	padding: 0 14px;
+}
+.right-header .butText{
+	color: #fff;
+	font-size: 14px;
+	pointer-events:none;
+}
+.right-header .template-name{
+	width: 300px;
+}
+.div-houver{
+	background-color: #545454FF;
+}
+.div-houver .butText{
+	color: #DB6037;
+}
+.div-houver .icon{
+	fill: #DB6037;
+}
