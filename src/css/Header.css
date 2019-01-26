@@ -85,3 +85,15 @@
 .div-houver .icon{
 	fill: #DB6037;
 }
+
+.app-header div :hover{
+	background-color: #545454FF;
+}
+
+.app-header div :hover .butText{
+	color: #DB6037;
+}
+
+.app-header div :hover .icon{
+	fill: #DB6037;
+}

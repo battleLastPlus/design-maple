@@ -1,0 +1,9 @@
+.app-content{
+    position: absolute;
+    top: 61px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    min-width: 780px;
+    background-color: #ccc;
+  }
