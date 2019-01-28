@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "all": "0.0.0",
     "antd": "^3.12.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

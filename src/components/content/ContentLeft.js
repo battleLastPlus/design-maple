@@ -1,10 +1,36 @@
 import React, { Component } from 'react';
 import '../../css/ContentLeft.css'
+import LeftSectionText from './leftSection/LeftSectionText'
+import LeftSectionMaterial from './leftSection/LeftSectionMaterial'
 
 class ContentLeft extends Component {
-    render() {
-        return (
+    constructor() {
+        super();
+        this.state = {
+            alias : "text"
+        }
+    }
 
+    showLeftContent = (e) =>  {
+        console.log("aaaaaa");
+        this.setState({
+            alias: "material"
+        })
+        console.log(this.state.alias);
+    }
+    render() {
+        let content = (<LeftSectionText></LeftSectionText>);
+        switch(this.state.alias){
+            case 'material':
+            console.log("--------material");
+                content = <LeftSectionMaterial></LeftSectionMaterial>;
+                break;
+            default:
+            console.log("--------text");
+                content = <LeftSectionText></LeftSectionText>;
+        }
+        console.log("content", content);
+        return (
             <div className="content-left">
                 <div className="content-left-menu">
                     <div alias="text">
@@ -13,7 +39,7 @@ class ContentLeft extends Component {
                         </svg>
                         <span className="butText">文字</span>
                     </div>
-                    <div alias="material">
+                    <div alias="material" onClick={this.showLeftContent.bind()}>
                         <svg className="icon" aria-hidden="true">
                             <use href="#icon-tupian"></use>
                         </svg>
@@ -40,6 +66,7 @@ class ContentLeft extends Component {
                 </div>
 
                 <div className="content-left-main">
+                    {content}
                 </div>
             </div>
         );

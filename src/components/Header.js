@@ -7,73 +7,73 @@ import Input from 'antd/lib/input'
 class Header extends Component {
     render() {
         return (
-            <div class="app-header">
-                <div class="logo">
-                    <img class="logotext" src={logoTextPath} />
-                    <img class="logoimg" src={logoPath} />
+            <div className="app-header">
+                <div className="logo">
+                    <img className="logotext" src={logoTextPath} />
+                    <img className="logoimg" src={logoPath} />
                 </div>
-                <div class="left-header">
-                    <div class="create">
-                        <span class="butText">新建设计</span>
+                <div className="left-header">
+                    <div className="create">
+                        <span className="butText">新建设计</span>
                     </div>
 
-                    <div class="size">
-                        <span class="butText">尺寸:</span>
-                        <span class="butText">90x50</span>
+                    <div className="size">
+                        <span className="butText">尺寸:</span>
+                        <span className="butText">90x50</span>
                     </div>
 
-                    <div class="setting">
-                        <svg class="icon" aria-hidden="true">
+                    <div className="setting">
+                        <svg className="icon" aria-hidden="true">
                             <use href="#icon-cog"></use>
                         </svg>
-                        <span class="butText">设置</span>
+                        <span className="butText">设置</span>
                     </div>
 
-                    <div class="undo">
-                        <svg class="icon" aria-hidden="true">
+                    <div className="undo">
+                        <svg className="icon" aria-hidden="true">
                             <use href="#icon-undo"></use>
                         </svg>
-                        <span class="butText">撤销</span>
+                        <span className="butText">撤销</span>
                     </div>
 
-                    <div class="repeat">
-                        <svg class="icon" aria-hidden="true">
+                    <div className="repeat">
+                        <svg className="icon" aria-hidden="true">
                             <use href="#icon-repeat"></use>
                         </svg>
-                        <span class="butText">还原</span>
+                        <span className="butText">还原</span>
                     </div>
                 </div>
 
 
 
-                <div class="right-header">
-                    <div class="template-name">
+                <div className="right-header">
+                    <div className="template-name">
                         {/* <el-input v-model="templateName" placeholder="请输入内容"></el-input> */}
                         <Input defaultValue='设置名字'></Input>
                     </div>
-                    <div class="preview">
-                        <svg class="icon" aria-hidden="true">
+                    <div className="preview">
+                        <svg className="icon" aria-hidden="true">
                             <use href="#icon-eye"></use>
                         </svg>
-                        <span class="butText">预览</span>
+                        <span className="butText">预览</span>
                     </div>
-                    <div class="share">
-                        <svg class="icon" aria-hidden="true">
+                    <div className="share">
+                        <svg className="icon" aria-hidden="true">
                             <use href="#icon-paper-plane"></use>
                         </svg>
-                        <span class="butText">分享</span>
+                        <span className="butText">分享</span>
                     </div>
-                    <div class="save">
-                        <svg class="icon" aria-hidden="true">
+                    <div className="save">
+                        <svg className="icon" aria-hidden="true">
                             <use href="#icon-floppy-o"></use>
                         </svg>
-                        <span class="butText">保存</span>
+                        <span className="butText">保存</span>
                     </div>
-                    <div class="save">
-                        <svg class="icon" aria-hidden="true">
+                    <div className="save">
+                        <svg className="icon" aria-hidden="true">
                             <use href="#icon-download"></use>
                         </svg>
-                        <span class="butText">下载</span>
+                        <span className="butText">下载</span>
                     </div>
                 </div>
             </div>
