@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import '../../css/ContentLeft.css'
+
 import LeftSectionText from './leftSection/LeftSectionText'
 import LeftSectionMaterial from './leftSection/LeftSectionMaterial'
+
+import {showLeftMenu} from '../../actions/leftMenuAction'
 
 class ContentLeft extends Component {
     constructor() {
@@ -39,7 +44,7 @@ class ContentLeft extends Component {
                         </svg>
                         <span className="butText">文字</span>
                     </div>
-                    <div alias="material" onClick={this.showLeftContent.bind()}>
+                    <div alias="material" onClick={this.props.showLeftMenu.bind()}>
                         <svg className="icon" aria-hidden="true">
                             <use href="#icon-tupian"></use>
                         </svg>
@@ -73,4 +78,7 @@ class ContentLeft extends Component {
     }
 }
 
-export default ContentLeft;
+const mapStateToProps = state => ({
+  })
+
+export default connect(mapStateToProps, {showLeftMenu})(ContentLeft);
