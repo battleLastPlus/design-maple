@@ -5,7 +5,7 @@ import imgUrl from '../../../static/images/qqq.JPG'
 class LeftSectionMaterial extends Component {
     render() {
         return (
-            <div className="lefe-section-text">
+            <div className="lefe-section-material">
               material
               <img style={{width: '20px'}} src={imgUrl}/>
             </div>
