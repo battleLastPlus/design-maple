@@ -1,9 +1,9 @@
 import {SHOW_LEFTMENU} from './type' 
 
-export const showLeftMenu = () => dispatch => {
-    console.log("showLeftMenu");
+export const showLeftMenu = (e) => dispatch => {
+    let alias = e.target.getAttribute("alias");
     dispatch({
         type: SHOW_LEFTMENU,
-		payload: {alias: "Material"}
+		payload: {alias: alias}
     })
 }

@@ -11,7 +11,7 @@ export default function (state = initialState, action){
         case SHOW_LEFTMENU:
         return {
             ...state,
-            isShow: !state.isShow
+            alias: action.payload.alias
         }
         default:
 			return state;
