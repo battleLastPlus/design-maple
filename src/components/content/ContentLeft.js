@@ -9,23 +9,12 @@ import LeftSectionMaterial from './leftSection/LeftSectionMaterial'
 import {showLeftMenu} from '../../actions/leftMenuAction'
 
 class ContentLeft extends Component {
-    constructor() {
-        super();
-        this.state = {
-            alias : "text"
-        }
-    }
-
     showLeftContent = (e) =>  {
-        console.log("aaaaaa");
-        this.setState({
-            alias: "material"
-        })
-        console.log(this.state.alias);
     }
     render() {
         let content = (<LeftSectionText></LeftSectionText>);
-        switch(this.state.alias){
+        console.log("this.props.alias", this.props.leftMenu.alias);
+        switch(this.props.leftMenu.alias){
             case 'material':
             console.log("--------material");
                 content = <LeftSectionMaterial></LeftSectionMaterial>;
@@ -79,6 +68,7 @@ class ContentLeft extends Component {
 }
 
 const mapStateToProps = state => ({
-  })
+    leftMenu: state.leftMenu
+})
 
 export default connect(mapStateToProps, {showLeftMenu})(ContentLeft);
