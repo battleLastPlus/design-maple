@@ -16,18 +16,16 @@ class ContentLeft extends Component {
     showLeftContent = (e) =>  {
     }
     render() {
-        let content = (<LeftSectionText></LeftSectionText>);
-        console.log("this.props.alias", this.props.leftMenu.alias);
-        switch(this.props.leftMenu.alias){
-            case 'material':
-            console.log("--------material");
-                content = <LeftSectionMaterial></LeftSectionMaterial>;
-                break;
-            default:
-            console.log("--------text");
-                content = <LeftSectionText></LeftSectionText>;
+        let content = null;
+        if(this.props.leftMenu.isShow){
+            switch(this.props.leftMenu.alias){
+                case 'material':
+                    content = (<div className="content-left-main"><LeftSectionMaterial></LeftSectionMaterial></div>);
+                    break;
+                default:
+                    content = (<div className="content-left-main"><LeftSectionText></LeftSectionText></div>);
+            }
         }
-        console.log("content", content);
         return (
             <div className="content-left">
                 <div className="content-left-menu">
@@ -63,9 +61,7 @@ class ContentLeft extends Component {
                     </div>
                 </div>
 
-                <div className="content-left-main">
-                    {content}
-                </div>
+                {content}
             </div>
         );
     }

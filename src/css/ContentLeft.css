@@ -42,7 +42,7 @@
     pointer-events:none;
   }
 
-  .content-left-menu div:hover {
+  /* .content-left-menu div:hover {
     background-color: #F4F4F4FF;
   }
   .content-left-menu div:hover .butText {
@@ -50,7 +50,7 @@
   }
   .content-left-menu div:hover .icon{
     fill: #DB6037;
-  }
+  } */
 
   .content-left-menu .div-selected{
     background-color: #C6C6C6FF;
