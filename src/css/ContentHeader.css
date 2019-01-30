@@ -1,0 +1,10 @@
+.content-header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 29px;
+    border-bottom: 1px solid #eee;
+    background-color: #FCFCFC;
+    box-shadow: 0 0px 5px #eee; 
+  }

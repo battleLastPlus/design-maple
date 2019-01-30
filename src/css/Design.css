@@ -1,0 +1,14 @@
+.design{
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  width: 400px;
+  height: 700px;
+  margin-left: -250px;
+  box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 15px;  
+  background-color: #41DE74;
+}
+.design img{
+  width: 100%;
+  height: 100%;
+}
