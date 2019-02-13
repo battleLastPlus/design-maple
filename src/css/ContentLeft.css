@@ -1,5 +1,12 @@
 
-  .content-left .icon {
+  .content-left .left-icon {
+    font-size: 1.8em;
+    fill: #000;
+    pointer-events:none;
+    overflow: hidden;
+    padding-top: 16px;
+  }
+  /* .content-left .icon {
     width: 1.8em; 
     height: 1.8em;
     vertical-align: -0.15em;
@@ -7,7 +14,7 @@
     overflow: hidden;
     pointer-events:none;
     padding-top: 16px;
-  }
+  } */
   .content-left .background .icon, .line .icon{
     width: 1.95em; 
     height: 1.95em;
@@ -17,7 +24,7 @@
     top: 0px;
     left: 0px;
     bottom: 0px;
-    border-right: 1px solid #ccc;    
+    /* border-right: 1px solid rgb(88, 50, 50);     */
     box-shadow: 6px 0px 5px -4px #cecece;
   
   }
@@ -58,8 +65,8 @@
   .content-left-menu .div-selected .butText{
     color: #DB6037;
   }
-  .content-left-menu .div-selected .icon{
-    fill: #DB6037;
+  .content-left-menu .div-selected .left-icon{
+    color: #DB6037;
   }
   
   .content-left-main{

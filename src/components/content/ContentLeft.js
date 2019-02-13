@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import MyIcon from '../common/MyIcon'
 import '../../css/ContentLeft.css'
 
 import LeftSectionText from './leftSection/LeftSectionText'
 import LeftSectionMaterial from './leftSection/LeftSectionMaterial'
 
 import {showLeftMenu} from '../../actions/leftMenuAction'
-
 class ContentLeft extends Component {
     constructor(props) {
         super(props);
@@ -30,33 +30,26 @@ class ContentLeft extends Component {
             <div className="content-left">
                 <div className="content-left-menu">
                     <div className={this.props.leftMenu.alias === 'text' ? 'div-selected':null} alias="text" onClick={this.showLeftMenu}>
-                        <svg className="icon" aria-hidden="true">
+                        {/* <svg className="icon" aria-hidden="true">
                             <use href="#icon-wenzi1"></use>
-                        </svg>
+                        </svg> */}
+                        <MyIcon className="left-icon" type="icon-wenzi1" />
                         <span className="butText">文字</span>
                     </div>
                     <div className={this.props.leftMenu.alias === 'material' ? 'div-selected':null} alias="material" onClick={this.showLeftMenu}>
-                        <svg className="icon" aria-hidden="true">
-                            <use href="#icon-tupian"></use>
-                        </svg>
+                        <MyIcon className="left-icon" type="icon-tupian" />
                         <span className="butText">素材</span>
                     </div>
                     <div className={this.props.leftMenu.alias === 'background' ? 'div-selected':null} alias="background" onClick={this.showLeftMenu}>
-                        <svg className="icon" aria-hidden="true">
-                            <use href="#icon-background"></use>
-                        </svg>
+                        <MyIcon className="left-icon" type="icon-background" />
                         <span className="butText">背景</span>
                     </div>
                     <div className={this.props.leftMenu.alias === 'line' ? 'div-selected':null} alias="line" onClick={this.showLeftMenu}>
-                        <svg className="icon" aria-hidden="true">
-                            <use href="#icon-fengexian"></use>
-                        </svg>
+                        <MyIcon className="left-icon" type="icon-fengexian" />
                         <span className="butText">线条</span>
                     </div>
                     <div className={this.props.leftMenu.alias === 'upload' ? 'div-selected':null} alias="upload" onClick={this.showLeftMenu}>
-                        <svg className="icon" aria-hidden="true">
-                            <use href="#icon-fasong"></use>
-                        </svg>
+                        <MyIcon className="left-icon" type="icon-fasong" />
                         <span className="butText">上传</span>
                     </div>
                 </div>
