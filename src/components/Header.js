@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MyIcon from './common/MyIcon'
 import '../css/Header.css'
 import logoTextPath from '../static/images/logotext.png'
 import logoPath from '../static/images/logo.png'
@@ -23,23 +24,20 @@ class Header extends Component {
                     </div>
 
                     <div className="setting">
-                        <svg className="icon" aria-hidden="true">
+                        {/* <svg className="icon" aria-hidden="true">
                             <use href="#icon-cog"></use>
-                        </svg>
+                        </svg> */}
+                        <MyIcon className="top-icon" type="icon-cog" />
                         <span className="butText">设置</span>
                     </div>
 
                     <div className="undo">
-                        <svg className="icon" aria-hidden="true">
-                            <use href="#icon-undo"></use>
-                        </svg>
+                        <MyIcon className="top-icon" type="icon-undo" />
                         <span className="butText">撤销</span>
                     </div>
 
                     <div className="repeat">
-                        <svg className="icon" aria-hidden="true">
-                            <use href="#icon-repeat"></use>
-                        </svg>
+                        <MyIcon className="top-icon" type="icon-repeat" />
                         <span className="butText">还原</span>
                     </div>
                 </div>
@@ -52,27 +50,19 @@ class Header extends Component {
                         <Input defaultValue='设置名字'></Input>
                     </div>
                     <div className="preview">
-                        <svg className="icon" aria-hidden="true">
-                            <use href="#icon-eye"></use>
-                        </svg>
+                        <MyIcon className="top-icon" type="icon-eye" />
                         <span className="butText">预览</span>
                     </div>
                     <div className="share">
-                        <svg className="icon" aria-hidden="true">
-                            <use href="#icon-paper-plane"></use>
-                        </svg>
+                        <MyIcon className="top-icon" type="icon-paper-plane" />
                         <span className="butText">分享</span>
                     </div>
                     <div className="save">
-                        <svg className="icon" aria-hidden="true">
-                            <use href="#icon-floppy-o"></use>
-                        </svg>
+                        <MyIcon className="top-icon" type="icon-floppy-o" />
                         <span className="butText">保存</span>
                     </div>
                     <div className="save">
-                        <svg className="icon" aria-hidden="true">
-                            <use href="#icon-download"></use>
-                        </svg>
+                        <MyIcon className="top-icon" type="icon-download" />
                         <span className="butText">下载</span>
                     </div>
                 </div>

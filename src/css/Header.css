@@ -1,10 +1,17 @@
-.icon {
+.app-header .top-icon {
+	font-size: 1em;
+	vertical-align: -0.15em;
+	color: #fff;
+	margin-right: 3px;
+	pointer-events:none;
+}
+/* .icon {
 	width: 1em; height: 1em;
 	vertical-align: -0.15em;
 	fill: #fff;
 	overflow: hidden;
 	pointer-events:none;
-}
+} */
 .app-header{
 	position: absolute;
 	left: 0px;
