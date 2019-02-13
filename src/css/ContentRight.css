@@ -1,0 +1,9 @@
+.content-right{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 200px;
+  background-color: #FCFCFC;
+  box-shadow: 1px 0px 6px 4px #cecece;
+}
