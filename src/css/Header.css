@@ -83,17 +83,8 @@
 .right-header .template-name{
 	width: 300px;
 }
-.div-houver{
-	background-color: #545454FF;
-}
-.div-houver .butText{
-	color: #DB6037;
-}
-.div-houver .icon{
-	fill: #DB6037;
-}
 
-.app-header div :hover{
+.app-header .highlight:hover{
 	background-color: #545454FF;
 }
 
@@ -101,6 +92,6 @@
 	color: #DB6037;
 }
 
-.app-header div :hover .icon{
-	fill: #DB6037;
+.app-header div :hover .top-icon{
+	color: #DB6037;
 }

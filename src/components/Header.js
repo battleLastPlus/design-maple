@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import MyIcon from './common/MyIcon'
+import { Input } from 'antd';
 import '../css/Header.css'
 import logoTextPath from '../static/images/logotext.png'
 import logoPath from '../static/images/logo.png'
-import Input from 'antd/lib/input'
 
 class Header extends Component {
     render() {
@@ -14,16 +14,16 @@ class Header extends Component {
                     <img className="logoimg" src={logoPath} />
                 </div>
                 <div className="left-header">
-                    <div className="create">
+                    <div className="highlight create">
                         <span className="butText">新建设计</span>
                     </div>
 
-                    <div className="size">
+                    <div className="highlight size">
                         <span className="butText">尺寸:</span>
                         <span className="butText">90x50</span>
                     </div>
 
-                    <div className="setting">
+                    <div className="highlight setting">
                         {/* <svg className="icon" aria-hidden="true">
                             <use href="#icon-cog"></use>
                         </svg> */}
@@ -31,12 +31,12 @@ class Header extends Component {
                         <span className="butText">设置</span>
                     </div>
 
-                    <div className="undo">
+                    <div className="highlight undo">
                         <MyIcon className="top-icon" type="icon-undo" />
                         <span className="butText">撤销</span>
                     </div>
 
-                    <div className="repeat">
+                    <div className="highlight repeat">
                         <MyIcon className="top-icon" type="icon-repeat" />
                         <span className="butText">还原</span>
                     </div>
@@ -49,19 +49,19 @@ class Header extends Component {
                         {/* <el-input v-model="templateName" placeholder="请输入内容"></el-input> */}
                         <Input defaultValue='设置名字'></Input>
                     </div>
-                    <div className="preview">
+                    <div className="highlight bpreview">
                         <MyIcon className="top-icon" type="icon-eye" />
                         <span className="butText">预览</span>
                     </div>
-                    <div className="share">
+                    <div className="highlight share">
                         <MyIcon className="top-icon" type="icon-paper-plane" />
                         <span className="butText">分享</span>
                     </div>
-                    <div className="save">
+                    <div className="highlight save">
                         <MyIcon className="top-icon" type="icon-floppy-o" />
                         <span className="butText">保存</span>
                     </div>
-                    <div className="save">
+                    <div className="highlight save">
                         <MyIcon className="top-icon" type="icon-download" />
                         <span className="butText">下载</span>
                     </div>
