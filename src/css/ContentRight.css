@@ -9,5 +9,10 @@
 }
 
 .content-right .top-menu{
-  margin-top: 10px;
+  margin: 10px 0px 10px 0px;
+}
+
+.right-preview .page{
+  max-width: 160px;
+  max-width: 260px;
 }

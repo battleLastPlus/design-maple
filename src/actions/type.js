@@ -1,1 +1,2 @@
 export const SHOW_LEFTMENU = "SHOW_LEFTMENU"
+export const SHOW_RIGHTMENU = "SHOW_RIGHTMENU"

@@ -1,8 +1,9 @@
-import {SHOW_LEFTMENU} from './type' 
+import {SHOW_RIGHTMENU} from './type' 
 
-export const showLeftMenu = (e) => dispatch => {
+export const showRightMenu = (e) => dispatch => {
+    console.log("aaaa:"+e.target.value);
     dispatch({
-        type: SHOW_LEFTMENU,
-		payload: {alias: e.target.getAttribute("alias")}
+        type: SHOW_RIGHTMENU,
+		payload: {alias: e.target.value}
     })
 }
