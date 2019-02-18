@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import '../../css/ContentRight.css'
-import { Button, Radio, Icon } from 'antd'
+import {  Radio } from 'antd'
 
 import RightSectionPage from './rightSection/RightSectionPage'
 import RightSectionText from './rightSection/RightSectionText'
