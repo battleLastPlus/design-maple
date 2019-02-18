@@ -9,7 +9,6 @@ const initialState = {
 export default function (state = initialState, action){
     switch(action.type){
         case ELEMENT_TEXT_ADD:
-        console.log("ELEMENT_TEXT_ADD");
             let defaultText = {
                 alias: "text",
                 content: "添加文字",
@@ -28,7 +27,6 @@ export default function (state = initialState, action){
             defaultText.maxid = maxid;
             state.text = defaultText;
             state.texts.push(defaultText);
-            console.log("defaultText", state.texts);
             return {
                 ...state
             }

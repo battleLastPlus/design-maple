@@ -12,6 +12,9 @@ class LeftSectionText extends Component {
         this.addText = this.props.addText.bind(this);
     }
     render() {
+        this.props.textele.texts.forEach((item) => {
+            console.log("item");
+        });
         return (
             <div className="lefe-section-text">
               Text
@@ -22,4 +25,8 @@ class LeftSectionText extends Component {
     }
 }
 
-export default connect(null, {addText})(LeftSectionText);
+const mapStateToProps = state => ({
+    textele: state.textele
+})
+
+export default connect(mapStateToProps, {addText})(LeftSectionText);
