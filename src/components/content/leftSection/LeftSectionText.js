@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { addText } from '../../../actions/element/textAction'
+import { addText } from '../../../actions/design/textAction'
 import {Button} from 'antd';
 
 import imgUrl from '../../../static/images/111.JPG'
@@ -12,9 +12,6 @@ class LeftSectionText extends Component {
         this.addText = this.props.addText.bind(this);
     }
     render() {
-        this.props.textele.texts.forEach((item) => {
-            console.log("item");
-        });
         return (
             <div className="lefe-section-text">
               Text
@@ -25,8 +22,4 @@ class LeftSectionText extends Component {
     }
 }
 
-const mapStateToProps = state => ({
-    textele: state.textele
-})
-
-export default connect(mapStateToProps, {addText})(LeftSectionText);
+export default connect(null, {addText})(LeftSectionText);

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import '../../css/Design.css'
 
-import DesignText from './design/elelemt/DesignText'
+import DesignElement from './design/DesignElement'
 import imgUrl from '../../static/images/design.png'
 
 class Design extends Component {
@@ -17,7 +17,7 @@ class Design extends Component {
                 <div className="design-main">
                     <div className="design-canvas">
                         <div className="design-page">
-                            <DesignText></DesignText>
+                            <DesignElement></DesignElement>
                             {/* <img src={imgUrl} alt=""/> */}
                         </div>
                     </div>

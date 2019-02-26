@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import leftMenuReducer from './leftMenuReducer'
 import rightMenuReducer from './rightMenuReducer'
-import textReducer from './element/textReducer'
+import designElementReducer from './design/designElementReducer'
 
 export default combineReducers({
     leftMenu: leftMenuReducer,
     rightMenu: rightMenuReducer,
-    textele: textReducer
+    designElement: designElementReducer
 })
