@@ -26,12 +26,15 @@ const defaultText = {
 export default function (state = elementState.textele, action){
     switch(action.type){
         case ELEMENT_TEXT_ADD:
-            let maxid = state.maxid++ ;
-            defaultText.maxid = maxid;
+            let maxid = state.maxid;
+            defaultText.maxid = maxid + 1;
             // state.text = defaultText;
-            state.texts.push(defaultText);
+            let texts = state.texts.slice();
+            texts.push(defaultText);
             return {
-                ...state
+                ...state,
+                maxid: maxid + 1,
+                texts: texts
             }
         default:
 			return {...state};

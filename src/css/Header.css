@@ -19,7 +19,7 @@
 	width: 100%;
 	min-width: 1200px;
 	height: 60px;
-    background: #161616FF;
+    /* background: #161616FF; */
 	border-bottom: 1px solid #212121;
     box-shadow: 0 0px 5px #212121;		
 }
