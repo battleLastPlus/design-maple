@@ -9,17 +9,6 @@ export const designElement = {
             content: "#cccccc"
         },
         textElements: [{
-            alias: "text",
-            content: "添加文字",
-            fontsize: 12,
-            fontspacing: 0,
-            lineheight: 0,
-            bold: false,
-            italic: false,
-            color: "#000000",
-            align: "left",
-            rotate: 0,
-            opacity: 0
         }]
     }],
     maxid: {
@@ -28,8 +17,8 @@ export const designElement = {
     }
 }
 
-export const designState = {
-    selPage: 0
+export const designBase = {
+    currentPage: 0
 }
 
 export const defaultText = {
@@ -46,3 +35,4 @@ export const defaultText = {
     opacity: 0
     
 }
+

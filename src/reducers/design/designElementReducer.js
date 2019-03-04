@@ -1,18 +1,20 @@
-import {ELEMENT_TEXT_ADD} from '../../actions/type'
+import { ELEMENT_TEXT_ADD } from '../../actions/type'
 
-import {designElement, defaultText, designState} from '../../moudels/DesignElementMoudel'
+import { designElement, defaultText, designBase } from '../../moudels/DesignMoudel'
+import { getDesignElement } from '../../moudels/DesignNormalize'
 
-export default function (state = designElement, action){
-    switch(action.type){
+export default function (state = getDesignElement(designElement), action) {
+    switch (action.type) {
         case ELEMENT_TEXT_ADD:
-            let maxid = state.maxid.textid++;
-            defaultText.maxid = maxid;
-            console.log("designState.selPage:"+designState.selPage);
-            state.page[designState.selPage].textElements.push(defaultText);
+            console.log("state------", state);
+            // let maxid = state.maxid.textid++;
+            // defaultText.maxid = maxid;
+            // console.log("designBase.selPage:"+designBase.selPage);
+            // state.page[designBase.selPage].textElements.push(defaultText);
             return {
                 ...state
             }
         default:
-			return {...state};
+            return { ...state };
     }
 }
